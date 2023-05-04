@@ -1,8 +1,8 @@
 import json
 from flask import Flask, request, Response, jsonify
-from flask_cors import CORS
+#from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 @app.route('/only_response')
 def only_response():
@@ -19,7 +19,7 @@ def request_response(request=request):
     #return Response(json.dumps({"response":query}), status=200, mimetype='application/json') 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0', port=80)
+   app.run(host="0.0.0.0", port="8080", debug=True)
 
 
 
