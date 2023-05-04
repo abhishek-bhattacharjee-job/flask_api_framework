@@ -19,7 +19,7 @@ def request_response(request=request):
     #return Response(json.dumps({"response":query}), status=200, mimetype='application/json') 
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0', port=8000)
+   app.run(host='0.0.0.0', port=8787)
 
 
 
